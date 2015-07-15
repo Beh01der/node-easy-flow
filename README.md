@@ -86,6 +86,9 @@ flow.start({ balance: 1000 });
 ```
 See full example [here](https://github.com/Beh01der/node-easy-flow/blob/master/lib/atm-example.js)
 
+## See also
+[EasyFlow for Java](https://github.com/Beh01der/EasyFlow)
+
 ## License 
 **ISC License (ISC)**
 
