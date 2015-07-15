@@ -8,6 +8,7 @@ Thanks to its convenient hierarchical transition builder, logic of complex appli
 Install locally
 ```
 npm install node-easy-flow
+```
 
 ## Quick start
 FSM is defined with `node-easy-flow` through combination of transitions and handlers
@@ -68,6 +69,7 @@ var flow = EasyFlow.create(function (from, on, to, finish, trigger, whenEnter) {
         });
     });
     ...
+});
     
 ```
 
