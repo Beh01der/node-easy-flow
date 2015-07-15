@@ -1,8 +1,12 @@
 # node-easy-flow
 
-Simple and easy to use Finite State Machine (FSM) for Node.js (similar to EasyFlow for Java)
+Simple and easy to use Finite State Machine (FSM) for Node.js (similar to EasyFlow for Java).
+
 This library greatly simplifies development of asynchronous event-driven applications. 
+
 Thanks to its convenient hierarchical transition builder, logic of complex applications remains clear and application itself manageable.
+
+Usecase for `node-easy-flow` is somehow similar to `async.series()` or `async.waterfall()` (see [here](https://github.com/caolan/async)), only `node-easy-flow` is more suitable for handling complex, non-linear logic.
      
 ## Install
 Install locally
