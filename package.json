@@ -1,0 +1,25 @@
+{
+  "name": "node-easy-flow",
+  "version": "1.0.0",
+  "description": "Simple and easy to use Finite State Machine for Node.js (similar to EasyFlow for Java)",
+  "main": "./lib/easy-flow.js",
+  "scripts": {
+    "test": "node ./lib/atm-example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Beh01der/node-easy-flow.git"
+  },
+  "author": "Andrey Chausenko <andrey.chausenko@gmail.com> (https://memz.co)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Beh01der/node-easy-flow/issues"
+  },
+  "homepage": "https://github.com/Beh01der/node-easy-flow",
+  "keywords": [
+    "fsm",
+    "finite state machine",
+    "rule engine",
+    "async"
+  ]
+}
