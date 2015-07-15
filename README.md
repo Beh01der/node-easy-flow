@@ -17,7 +17,7 @@ npm install node-easy-flow
 ## Quick start
 FSM is defined with `node-easy-flow` through combination of transitions and handlers
 ```javascript
-
+var EasyFlow = require('node-easy-flow');
 var flow = EasyFlow.create(function (from, on, to, finish, trigger, whenEnter) {
     // states
     var SHOWING_WELCOME = 'SHOWING_WELCOME',
