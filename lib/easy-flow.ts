@@ -207,7 +207,7 @@ export function create(configurator: Configurator): EasyFlow {
 
 export function responseHandler(context, trigger, hint?, events?) {
     return (err, res?, body?) => {
-        if (!err && (res.statusCode > 299 || (body && body.code && body.code.indexOf('ERROR') !=-1))) {
+        if (!err && ((res && res.statusCode && res.statusCode > 299) || (body && body.code && body.code.indexOf('ERROR') !=-1))) {
             err = res.statusCode + ': ' + body.code;
             if (body && body.message) {
                 err += ': ' + body.message;
