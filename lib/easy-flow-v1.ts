@@ -14,9 +14,10 @@ export interface Context {
     prevState?;
     lastEvent?;
     finished?;
+    [others: string]: any;  // allowing extra properties (user-defined)
 }
 
-interface Configurator {
+export interface Configurator {
     (from: {(state, ...transitions: Transition[])},
      on: {(event, transition: Transition): Transition},
      to: {(state, ...transitions: Transition[]): Transition},
@@ -27,22 +28,22 @@ interface Configurator {
      whenEvent: {(event, handler: Handler)})
 }
 
-enum HandlerType {
+export enum HandlerType {
     WHEN_ENTER,
     WHEN_LEAVE,
     WHEN_EVENT
 }
 
-class HandlerRecord {
+export class HandlerRecord {
     constructor(public handler: Handler, public match, public type: HandlerType) {
     }
 }
 
-function runAsync(callback) {
+export function runAsync(callback) {
     process.nextTick(callback);
 }
 
-class EasyFlow {
+export class EasyFlow {
     public resolvedTransitions: Transition[] = [];
     public handlers: HandlerRecord[] = [];
     public initialState;
